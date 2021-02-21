@@ -580,28 +580,28 @@ def render_help_section():
     WIN.blit(BOOST_SLOW_DOWN_ME, (32, reference_pos_y + 2 * single_boost_with_padding))
     WIN.blit(BOOST_SLOW_DOWN_ENEMY, (32, reference_pos_y + 3 * single_boost_with_padding))
 
-    boost1_description = main_font.render('Przyspiesza gracza na 5 sekund', True, WHITE)
+    boost1_description = main_font.render('Speed up me for 5 seconds', True, WHITE)
     WIN.blit(boost1_description, (32 + 64 + TEXT_MARGIN * 2, reference_pos_y + 32 - boost1_description.get_height() // 2))
 
-    boost2_description = main_font.render('Przyspiesza przeciwników na 5 sekund', True, WHITE)
+    boost2_description = main_font.render('Speed up enemy for 5 seconds', True, WHITE)
     WIN.blit(boost2_description, (32 + 64 + TEXT_MARGIN * 2, reference_pos_y + single_boost_with_padding + 32 - boost2_description.get_height() // 2))
 
-    boost3_description = main_font.render('Spowalnia gracza na 5 sekund', True, WHITE)
+    boost3_description = main_font.render('Slow down me for 5 seconds', True, WHITE)
     WIN.blit(boost3_description, (32 + 64 + TEXT_MARGIN * 2, reference_pos_y + 2 * single_boost_with_padding + 32 - boost3_description.get_height() // 2))
 
-    boost4_description = main_font.render('Spowalnia przeciwników na 5 sekund', True, WHITE)
+    boost4_description = main_font.render('Slow down enemy for 5 seconds', True, WHITE)
     WIN.blit(boost4_description, (32 + 64 + TEXT_MARGIN * 2, reference_pos_y + 3 * single_boost_with_padding + 32 - boost4_description.get_height() // 2))
 
     WIN.blit(KEY_A_ICON, (32, reference_pos_y + 5 * single_boost_with_padding))
     WIN.blit(KEY_D_ICON, (32 + 64 + 32, reference_pos_y + 5 * single_boost_with_padding))
 
-    player1_controls_description = main_font.render('Sterowanie gracza nr 1', True, WHITE)
+    player1_controls_description = main_font.render('Player 1 controls', True, WHITE)
     WIN.blit(player1_controls_description, (32 + 128 + 32 + TEXT_MARGIN * 2, reference_pos_y + 5 * single_boost_with_padding + 32 - player1_controls_description.get_height() // 2))
 
     WIN.blit(KEY_LEFT_ARROW_ICON, (32, reference_pos_y + 6 * single_boost_with_padding))
     WIN.blit(KEY_RIGHT_ARROW_ICON, (128, reference_pos_y + 6 * single_boost_with_padding))
 
-    player2_controls_description = main_font.render('Sterowanie gracza nr 2', True, WHITE)
+    player2_controls_description = main_font.render('Player 2 controls', True, WHITE)
     WIN.blit(player2_controls_description, (32 + 128 + 32 + TEXT_MARGIN * 2, reference_pos_y + 6 * single_boost_with_padding + 32 - player2_controls_description.get_height() // 2))
 
 def render_ui(player1, player2):
